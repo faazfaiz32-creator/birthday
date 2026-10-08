@@ -1,0 +1,1521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For Devu — 22 ❤️</title>
+
+    <!-- Elegant Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        :root {
+            --wine: #6e243e;
+            --rose: #b85b78;
+            --cream: #fffaf7;
+            --gold: #c9a56a;
+        }
+
+
+        body {
+            min-height: 100vh;
+
+            background:
+                radial-gradient(
+                    circle at 20% 10%,
+                    #ffffff,
+                    #f8ebe7 45%,
+                    #f1dfdc
+                );
+
+            color: var(--wine);
+
+            font-family: "Montserrat", sans-serif;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            overflow-x: hidden;
+        }
+
+
+        /* =========================
+           MAIN PAGE
+        ========================= */
+
+        .page {
+            width: 100%;
+            max-width: 760px;
+
+            padding: 28px 15px;
+        }
+
+
+        .card {
+
+            position: relative;
+
+            background: rgba(255, 250, 247, 0.97);
+
+            border: 1px solid #e8d3ca;
+
+            border-radius: 5px;
+
+            padding: 34px 25px 38px;
+
+            box-shadow:
+                0 25px 70px #5b26332b;
+
+            overflow: hidden;
+        }
+
+
+        /* Inner elegant border */
+
+        .card::before {
+
+            content: "";
+
+            position: absolute;
+
+            inset: 10px;
+
+            border: 1px solid #dfc4b8;
+
+            pointer-events: none;
+        }
+
+
+        .content {
+
+            position: relative;
+
+            z-index: 2;
+
+            text-align: center;
+        }
+
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        .kicker {
+
+            font-size: 10px;
+
+            letter-spacing: 5px;
+
+            text-transform: uppercase;
+
+            color: var(--rose);
+
+            font-weight: 600;
+        }
+
+
+        h1 {
+
+            font-family: "Cormorant Garamond", serif;
+
+            font-size: clamp(58px, 13vw, 100px);
+
+            font-weight: 500;
+
+            line-height: 0.75;
+
+            margin: 20px 0 5px;
+
+            color: var(--wine);
+        }
+
+
+        .year {
+
+            font-family: "Cormorant Garamond", serif;
+
+            font-size: 27px;
+
+            letter-spacing: 5px;
+
+            color: var(--gold);
+        }
+
+
+        /* Divider */
+
+        .divider {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 12px;
+
+            justify-content: center;
+
+            margin: 20px auto;
+
+            width: min(350px, 80%);
+
+            color: var(--gold);
+        }
+
+
+        .divider span {
+
+            height: 1px;
+
+            background: #ddc5b9;
+
+            flex: 1;
+        }
+
+
+        .heartmark {
+
+            font-size: 18px;
+        }
+
+
+        /* Intro quote */
+
+        .intro {
+
+            font-family: "Cormorant Garamond", serif;
+
+            font-size: 23px;
+
+            line-height: 1.45;
+
+            margin: 0 auto 25px;
+
+            max-width: 510px;
+        }
+
+
+        /* =========================
+           PHOTO
+        ========================= */
+
+        .photo-frame {
+
+            max-width: 540px;
+
+            margin: 0 auto 28px;
+
+            position: relative;
+
+            padding: 10px 10px 34px;
+
+            background: white;
+
+            box-shadow:
+                0 18px 40px #54233724;
+
+            transform: rotate(-1deg);
+        }
+
+
+        .photo-frame img {
+
+            display: block;
+
+            width: 100%;
+
+            height: auto;
+
+            max-height: 470px;
+
+            object-fit: cover;
+        }
+
+
+        .photo-frame::after {
+
+            content: "Devu ♡";
+
+            position: absolute;
+
+            bottom: 7px;
+
+            left: 0;
+
+            right: 0;
+
+            font-family: "Cormorant Garamond", serif;
+
+            font-size: 20px;
+
+            color: #8d5367;
+        }
+
+
+        /* =========================
+           CAKE
+        ========================= */
+
+        .cake-stage {
+
+            position: relative;
+
+            width: 280px;
+
+            height: 235px;
+
+            margin: 8px auto 0;
+        }
+
+
+        /* Plate */
+
+        .plate {
+
+            position: absolute;
+
+            bottom: 12px;
+
+            left: 15px;
+
+            width: 250px;
+
+            height: 25px;
+
+            border-radius: 50%;
+
+            background: linear-gradient(
+                #ffffff,
+                #ead9d4
+            );
+
+            border: 1px solid #d6bdb7;
+
+            box-shadow:
+                0 5px 10px #5c26331c;
+        }
+
+
+        /* Cake */
+
+        .cake-bottom {
+
+            position: absolute;
+
+            left: 40px;
+
+            bottom: 30px;
+
+            width: 200px;
+
+            height: 85px;
+
+            border-radius: 12px 12px 22px 22px;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    #a84b68,
+                    #d77f98,
+                    #a84b68
+                );
+
+            box-shadow:
+                inset 0 10px 0 #f9d9df,
+                0 8px 0 #8e3d59;
+        }
+
+
+        /* Cake top */
+
+        .cake-top {
+
+            position: absolute;
+
+            left: 40px;
+
+            bottom: 93px;
+
+            width: 200px;
+
+            height: 42px;
+
+            border-radius: 50%;
+
+            background:
+                linear-gradient(
+                    #fff8f5,
+                    #f7dce0
+                );
+
+            border: 1px solid #e4c6ca;
+
+            z-index: 2;
+        }
+
+
+        /* Icing */
+
+        .icing-drip {
+
+            position: absolute;
+
+            z-index: 3;
+
+            left: 57px;
+
+            bottom: 72px;
+
+            width: 165px;
+
+            height: 32px;
+
+            background: #fff5f1;
+
+            border-radius: 50% 50% 40% 40%;
+
+            box-shadow:
+                0 5px 0 #f3d2d7;
+        }
+
+
+        .icing-drip i {
+
+            position: absolute;
+
+            bottom: -16px;
+
+            width: 18px;
+
+            height: 23px;
+
+            border-radius: 0 0 12px 12px;
+
+            background: #fff5f1;
+        }
+
+
+        .icing-drip i:nth-child(1) {
+
+            left: 28px;
+        }
+
+
+        .icing-drip i:nth-child(2) {
+
+            left: 78px;
+
+            height: 30px;
+        }
+
+
+        .icing-drip i:nth-child(3) {
+
+            right: 25px;
+
+            height: 18px;
+        }
+
+
+        /* =========================
+           CANDLE
+        ========================= */
+
+        .candle {
+
+            position: absolute;
+
+            z-index: 6;
+
+            left: 131px;
+
+            bottom: 127px;
+
+            width: 22px;
+
+            height: 66px;
+
+            border-radius: 5px 5px 3px 3px;
+
+            background:
+                repeating-linear-gradient(
+                    135deg,
+                    #ffffff 0 8px,
+                    #c85c7d 8px 16px
+                );
+
+            box-shadow:
+                2px 3px 5px #5b26332b;
+        }
+
+
+        /* Candle top */
+
+        .candle::after {
+
+            content: "";
+
+            position: absolute;
+
+            left: 3px;
+
+            right: 3px;
+
+            top: 7px;
+
+            height: 4px;
+
+            border-radius: 50%;
+
+            background: #f3d8d3;
+        }
+
+
+        /* Wax */
+
+        .wax {
+
+            position: absolute;
+
+            top: 12px;
+
+            left: 3px;
+
+            width: 5px;
+
+            height: 17px;
+
+            border-radius: 0 0 7px 7px;
+
+            background: #fff0ec;
+
+            opacity: 0.9;
+        }
+
+
+        /* Wick */
+
+        .wick {
+
+            position: absolute;
+
+            z-index: 2;
+
+            top: -10px;
+
+            left: 9px;
+
+            width: 4px;
+
+            height: 12px;
+
+            background: #3c2a2c;
+
+            border-radius: 3px;
+        }
+
+
+        /* Flame */
+
+        .flame {
+
+            position: absolute;
+
+            z-index: 4;
+
+            top: -53px;
+
+            left: 1px;
+
+            width: 20px;
+
+            height: 40px;
+
+            cursor: pointer;
+
+            transform-origin: 50% 100%;
+
+            animation:
+                flicker 0.11s infinite alternate;
+        }
+
+
+        /* Outer flame */
+
+        .flame::before {
+
+            content: "";
+
+            position: absolute;
+
+            inset: 0;
+
+            border-radius:
+                55% 45%
+                55% 45%;
+
+            background:
+                linear-gradient(
+                    to top,
+                    #ff7b19 0%,
+                    #ffbd28 48%,
+                    #ffe78a 72%,
+                    #fff9d6 100%
+                );
+
+            box-shadow:
+                0 0 14px #ff9d2e,
+                0 0 34px #ffb52e77;
+
+            transform: rotate(2deg);
+        }
+
+
+        /* Inner flame */
+
+        .flame::after {
+
+            content: "";
+
+            position: absolute;
+
+            width: 9px;
+
+            height: 19px;
+
+            left: 6px;
+
+            top: 13px;
+
+            border-radius:
+                60% 40%
+                60% 40%;
+
+            background: #fff9cf;
+        }
+
+
+        /* Glow */
+
+        .glow {
+
+            position: absolute;
+
+            z-index: 1;
+
+            top: -72px;
+
+            left: -22px;
+
+            width: 65px;
+
+            height: 65px;
+
+            border-radius: 50%;
+
+            background: #ffb52e35;
+
+            filter: blur(7px);
+
+            animation:
+                glow 1s infinite alternate;
+        }
+
+
+        /* Flame disappears */
+
+        .flame.off {
+
+            display: none;
+        }
+
+
+        /* Smoke */
+
+        .smoke {
+
+            display: none;
+
+            position: absolute;
+
+            z-index: 8;
+
+            top: -56px;
+
+            left: 0;
+
+            color: #9d8b8a;
+
+            font-size: 30px;
+
+            opacity: 0.8;
+        }
+
+
+        .smoke.show {
+
+            display: block;
+
+            animation:
+                smoke 1.4s ease forwards;
+        }
+
+
+        /* =========================
+           BUTTON
+        ========================= */
+
+        .instruction {
+
+            font-size: 11px;
+
+            letter-spacing: 1.5px;
+
+            color: #997381;
+
+            text-transform: uppercase;
+
+            margin: 0 0 14px;
+        }
+
+
+        button {
+
+            font-family: "Montserrat", sans-serif;
+
+            border: 1px solid var(--wine);
+
+            background: var(--wine);
+
+            color: white;
+
+            border-radius: 2px;
+
+            padding: 13px 24px;
+
+            min-height: 46px;
+
+            cursor: pointer;
+
+            letter-spacing: 1px;
+
+            font-size: 11px;
+
+            font-weight: 600;
+
+            transition: 0.25s;
+        }
+
+
+        button:hover {
+
+            background: #8b3150;
+
+            transform: translateY(-2px);
+        }
+
+
+        button:disabled {
+
+            opacity: 0.8;
+
+        }
+
+
+        /* =========================
+           LETTER
+        ========================= */
+
+        .letter {
+
+            display: none;
+
+            text-align: left;
+
+            max-width: 560px;
+
+            margin: 30px auto 0;
+
+            padding: 28px 22px;
+
+            border-top: 1px solid #dfc4b8;
+
+            border-bottom: 1px solid #dfc4b8;
+
+            animation:
+                reveal 0.8s ease;
+        }
+
+
+        .letter.show {
+
+            display: block;
+        }
+
+
+        .letter-label {
+
+            text-align: center;
+
+            font-size: 10px;
+
+            letter-spacing: 4px;
+
+            text-transform: uppercase;
+
+            color: var(--rose);
+        }
+
+
+        .letter h2 {
+
+            text-align: center;
+
+            font-family:
+                "Cormorant Garamond",
+                serif;
+
+            font-size: 39px;
+
+            font-weight: 500;
+
+            margin: 8px 0 18px;
+        }
+
+
+        /* Photo inside letter */
+
+        .letter-photo {
+
+            width: 100%;
+
+            margin: 15px 0;
+
+            border-radius: 2px;
+
+            box-shadow:
+                0 10px 28px #5423371c;
+        }
+
+
+        .letter p {
+
+            font-family:
+                "Cormorant Garamond",
+                serif;
+
+            font-size: 21px;
+
+            line-height: 1.65;
+
+            margin: 12px 0;
+
+            color: #633548;
+        }
+
+
+        .signature {
+
+            text-align: right !important;
+
+            font-size: 24px !important;
+
+            font-style: italic;
+
+            margin-top: 22px !important;
+        }
+
+
+        .bottom {
+
+            margin-top: 25px;
+
+            font-family:
+                "Cormorant Garamond",
+                serif;
+
+            font-size: 18px;
+
+            color: #9c7180;
+        }
+
+
+        /* =========================
+           HEARTS
+        ========================= */
+
+        .float-heart {
+
+            position: fixed;
+
+            bottom: -30px;
+
+            font-size: 20px;
+
+            pointer-events: none;
+
+            animation:
+                float 5s linear forwards;
+
+            z-index: 10;
+        }
+
+
+        /* =========================
+           CONFETTI
+        ========================= */
+
+        .confetti {
+
+            position: fixed;
+
+            top: -20px;
+
+            width: 7px;
+
+            height: 12px;
+
+            animation:
+                fall 3.5s linear forwards;
+
+            z-index: 10;
+        }
+
+
+        /* =========================
+           ANIMATIONS
+        ========================= */
+
+        @keyframes flicker {
+
+            to {
+
+                transform:
+                    scale(0.9)
+                    rotate(-4deg)
+                    translateX(1px);
+            }
+        }
+
+
+        @keyframes glow {
+
+            to {
+
+                opacity: 0.7;
+
+                transform: scale(1.15);
+            }
+        }
+
+
+        @keyframes smoke {
+
+            to {
+
+                transform:
+                    translateY(-58px)
+                    translateX(15px)
+                    scale(1.5);
+
+                opacity: 0;
+            }
+        }
+
+
+        @keyframes reveal {
+
+            from {
+
+                opacity: 0;
+
+                transform:
+                    translateY(18px);
+            }
+
+            to {
+
+                opacity: 1;
+
+                transform: none;
+            }
+        }
+
+
+        @keyframes float {
+
+            to {
+
+                transform:
+                    translateY(-105vh)
+                    rotate(360deg);
+
+                opacity: 0;
+            }
+        }
+
+
+        @keyframes fall {
+
+            to {
+
+                transform:
+                    translateY(110vh)
+                    rotate(720deg);
+            }
+        }
+
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 520px) {
+
+            .card {
+
+                padding: 28px 18px;
+            }
+
+
+            .intro {
+
+                font-size: 21px;
+            }
+
+
+            .letter p {
+
+                font-size: 19px;
+            }
+
+
+            .photo-frame {
+
+                margin-left: 4px;
+
+                margin-right: 4px;
+            }
+
+
+            .cake-stage {
+
+                transform: scale(0.9);
+
+                margin-left: auto;
+
+                margin-right: auto;
+            }
+        }
+
+
+        /* Reduce animations for accessibility */
+
+        @media (prefers-reduced-motion: reduce) {
+
+            * {
+
+                animation-duration: 0.01ms !important;
+
+                transition: none !important;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<div class="page">
+
+    <div class="card">
+
+        <div class="content">
+
+
+            <!-- HEADER -->
+
+            <div class="kicker">
+                A little love, written for you
+            </div>
+
+
+            <h1>
+                Devu
+            </h1>
+
+
+            <div class="year">
+                22 • 2026
+            </div>
+
+
+            <div class="divider">
+
+                <span></span>
+
+                <div class="heartmark">
+                    ♡
+                </div>
+
+                <span></span>
+
+            </div>
+
+
+            <p class="intro">
+
+                “Some people become a beautiful part
+                of your life without even trying.
+                You are that person for me.”
+
+            </p>
+
+
+
+        
+
+
+            <!-- CAKE -->
+
+            <div class="cake-stage">
+
+
+                <!-- Plate -->
+
+                <div class="plate"></div>
+
+
+                <!-- Cake body -->
+
+                <div class="cake-bottom"></div>
+
+
+                <!-- Cake top -->
+
+                <div class="cake-top"></div>
+
+
+                <!-- Cream -->
+
+                <div class="icing-drip">
+
+                    <i></i>
+
+                    <i></i>
+
+                    <i></i>
+
+                </div>
+
+
+                <!-- Candle -->
+
+                <div class="candle">
+
+                    <div class="wax"></div>
+
+                    <div class="wick"></div>
+
+                    <div class="glow"></div>
+
+
+                    <!-- Flame -->
+
+                    <div
+                        id="flame"
+                        class="flame"
+                        aria-label="Tap candle flame"
+                    ></div>
+
+
+                    <!-- Smoke -->
+
+                    <div
+                        id="smoke"
+                        class="smoke"
+                    >
+                        〰
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Instructions -->
+
+            <div
+                id="instruction"
+                class="instruction"
+            >
+
+                Make a wish • tap the flame
+
+            </div>
+
+
+
+            <!-- Blow button -->
+
+            <button
+                id="blow"
+                type="button"
+            >
+
+                ✦ Blow out the candle
+
+            </button>
+
+
+
+            <!-- =====================
+                 ROMANTIC LETTER
+            ====================== -->
+
+            <div
+                id="letter"
+                class="letter"
+            >
+
+
+                <div class="letter-label">
+
+                    A letter for my Devu
+
+                </div>
+
+
+                <h2>
+
+                    Happy Birthday,
+                    My Love ❤️
+
+                </h2>
+
+
+
+                <!-- Photo inside letter -->
+
+                <img
+                    src="WhatsApp Image 2026-10-08 at 10.29.25 PM.jpeg"
+                    class="letter-photo"
+                    alt="A beautiful memory together"
+                >
+
+
+
+                <p>
+
+                    Today, you turn
+                    <strong>22</strong>,
+
+                    and I just want you to know
+                    how incredibly special you are to me.
+
+                </p>
+
+
+
+                <p>
+
+                    I hope this new chapter brings
+                    you the kind of happiness that stays,
+                    the kind of smiles that come naturally,
+                    and the courage to chase every dream
+                    in your heart.
+
+                </p>
+
+
+
+                <p>
+
+                    Thank you for all the little moments,
+                    the laughter, the memories and simply
+                    for being you.
+
+                    This photo is only one page of a story
+                    I hope we keep writing together.
+
+                </p>
+
+
+
+                <p>
+
+                    On your birthday, my wish for you
+                    is simple:
+
+                    <em>
+                        be happy, be loved, and never stop
+                        being the beautiful person you are.
+                    </em>
+
+                </p>
+
+
+
+                <p class="signature">
+
+                    With all my love,
+
+                    <br>
+
+                    ❤️
+
+                </p>
+
+
+            </div>
+
+
+
+            <div class="bottom">
+
+                Happy 22nd Birthday, Devu
+                • with love, always ♡
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<script>
+
+
+/* =========================
+   ELEMENTS
+========================= */
+
+const flame =
+    document.getElementById("flame");
+
+const smoke =
+    document.getElementById("smoke");
+
+const letter =
+    document.getElementById("letter");
+
+const button =
+    document.getElementById("blow");
+
+const instruction =
+    document.getElementById("instruction");
+
+
+let done = false;
+
+
+
+/* =========================
+   BIRTHDAY CELEBRATION
+========================= */
+
+function celebrate() {
+
+
+    /* Prevent multiple clicks */
+
+    if (done) {
+
+        return;
+    }
+
+
+    done = true;
+
+
+
+    /* Turn flame off */
+
+    flame.classList.add("off");
+
+
+    /* Show smoke */
+
+    smoke.classList.add("show");
+
+
+    /* Change instruction */
+
+    instruction.textContent =
+        "Your wish is on its way ✦";
+
+
+    /* Change button */
+
+    button.textContent =
+        "♡ Happy Birthday, Devu";
+
+
+    button.disabled = true;
+
+
+
+    /* Reveal letter */
+
+    letter.classList.add("show");
+
+
+
+    /* =====================
+       CONFETTI
+    ====================== */
+
+    for (
+        let i = 0;
+        i < 45;
+        i++
+    ) {
+
+        let c =
+            document.createElement("i");
+
+
+        c.className =
+            "confetti";
+
+
+        c.style.left =
+            Math.random() * 100 + "vw";
+
+
+        c.style.background =
+            [
+                "#b85b78",
+                "#c9a56a",
+                "#e8b7c7",
+                "#8e405d",
+                "#e7cfa4"
+            ][
+                Math.floor(
+                    Math.random() * 5
+                )
+            ];
+
+
+        c.style.animationDelay =
+            Math.random() + "s";
+
+
+        document.body.appendChild(c);
+
+
+        setTimeout(() => {
+
+            c.remove();
+
+        }, 4500);
+
+    }
+
+
+
+    /* =====================
+       FLOATING HEARTS
+    ====================== */
+
+    for (
+        let i = 0;
+        i < 22;
+        i++
+    ) {
+
+        let h =
+            document.createElement("span");
+
+
+        h.className =
+            "float-heart";
+
+
+        h.textContent =
+            [
+                "♡",
+                "♥",
+                "❤️",
+                "💕"
+            ][
+                Math.floor(
+                    Math.random() * 4
+                )
+            ];
+
+
+        h.style.left =
+            Math.random() * 100 + "vw";
+
+
+        h.style.animationDelay =
+            Math.random() + "s";
+
+
+        document.body.appendChild(h);
+
+
+        setTimeout(() => {
+
+            h.remove();
+
+        }, 5500);
+
+    }
+
+}
+
+
+
+/* =========================
+   CANDLE EVENTS
+========================= */
+
+
+/* Click flame */
+
+flame.addEventListener(
+    "click",
+    celebrate
+);
+
+
+/* Click button */
+
+button.addEventListener(
+    "click",
+    celebrate
+);
+
+
+</script>
+
+
+</body>
+
+</html>
